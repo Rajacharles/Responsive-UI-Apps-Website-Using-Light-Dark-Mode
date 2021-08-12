@@ -1,0 +1,124 @@
+@media screen and (min-width: 768px){
+  body{
+    margin: 0;
+  }
+
+  .nav__list{
+    display: flex;
+  }
+
+  .nav{
+    height: calc(var(--header-height) + 1.5rem);
+  }
+
+  .nav__toggle{
+    display: none;
+  }
+
+  .nav__item{
+    margin-left: var(--mb-5);
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+
+  /********************* End Of Part 1************************************/
+
+  .section{
+    padding-top: 8rem;
+  }
+  .home__container{
+    height: 100vh;
+    justify-items: center;
+  }
+
+  /********************************** End Of Part 2 **************************************/
+
+  .change-theme{
+    margin-left: var(--mb-2);
+  }
+
+  /********************************* End Of Part 3****************************************/
+  .services__container,
+  .menu__container{
+    margin-top: var(--mb-6);
+  }
+
+  .menu__container{
+    grid-template-columns: repeat(3, 210px);
+    column-gap: 4rem;
+  }
+  .menu__content{
+    padding: 3.75rem .75rem;
+  }
+  .menu__img{
+    width: 130px;
+  }
+
+  .app__store{
+    margin: 0 var(--mb-1) 0 0;
+  }
+
+}
+
+
+
+@media screen and (min-width: 960px){
+  .bd-container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+    /********************* End Of Part 1************************************/
+
+    .home__img{
+      width: 500px;
+    }
+
+    /********************************** End Of Part 2 **************************************/
+
+    .about__container,
+    .app__container{
+      column-gap: 7rem;
+    }
+}
+
+
+@media screen and (min-width: 576px){
+    /********************* End Of Part 1************************************/
+
+    .home__container,
+    .about__container,
+    .app__container {
+      grid-template-columns: repeat(2,1fr);
+      align-items: center;
+    }
+    /********************************** End Of Part 2 **************************************/
+
+    .about__data, .about__initial,
+    .app__data, .app__initial,
+    .contact__container, .contact__initial
+    {
+      text-align: initial;
+    }
+
+    .about__img{
+      width: 380px;
+      order: -1;
+    }
+
+    /************************************* End Of Part 3***********************************************/
+    .app__img{
+      width: 380px;
+      order: -1;
+    }
+
+    .contact__container{
+      grid-template-columns: 1.75fr 1fr;
+      align-items: center;
+    }
+    .contact__button{
+      justify-self: center;
+    }
+}
+
+
